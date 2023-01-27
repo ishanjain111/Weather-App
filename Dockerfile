@@ -5,5 +5,5 @@ COPY package*.json ./
 COPY package-lock*.json ./
 RUN npm install
 COPY . .
-EXPOSE 8080
+EXPOSE 80
 CMD ["node", "src/app.js"]
